@@ -11,35 +11,43 @@ const unitConverter = (startingUnit, endingUnit, value) => {
     let convertedResult;
 
     switch (`${startingUnit}-${endingUnit}`) {
-        case 'kmToMi':
+        case 'km-mi':
             convertedResult = kmToMi(value);
             break;
-        case 'miToKm':
+        case 'mi-km':
             convertedResult = miToKm(value);
             break;
-        case `lbsToKg`:
+        case 'lbs-kg':
             convertedResult = lbsToKg(value);
             break;
-        case 'kgToLbs':
+        case 'kg-lbs':
             convertedResult = kgToLbs(value);
             break;
-        case 'fahrenheitToCelsius':
+        case 'fahrenheit-celsius':
             convertedResult = fahrenheitToCelsius(value);
             break;
-        case 'celsiusToFahrenheit':
+        case 'celsius-fahrenheit':
             convertedResult = celsiusToFahrenheit(value);
-
-
+            break;
+        default:
+            convertedResult = 'Invalid units';
     }
 
     return convertedResult;
 };
 
+const convertLbsToKg = () => {
+    const lbsInput = document.getElementById('lbsInput').value;
+    const kgResult = unitConverter('lbs', 'kg', lbsInput);
+    const resultElement = document.getElementById('result');
 
+    if (typeof kgResult === 'number') {
+        resultElement.textContent = `${lbsInput} pounds is equal to ${kgResult} kilograms.`;
+    } else {
+        resultElement.textContent = 'Invalid input or conversion.';
+    }
 
-
-
-
+};
 
 
 

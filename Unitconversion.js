@@ -36,18 +36,32 @@ const unitConverter = (startingUnit, endingUnit, value) => {
     return convertedResult;
 };
 
-const convertLbsToKg = () => {
-    const lbsInput = document.getElementById('lbsInput').value;
-    const kgResult = unitConverter('lbs', 'kg', lbsInput);
+const convertWeight = () => {
+    const input = document.getElementById('Input').value;
+    const lbsResult = unitConverter('kg', 'lbs', input);
+    const kgResult = unitConverter('lbs', 'kg', input);
     const resultElement = document.getElementById('result');
-
-    if (typeof kgResult === 'number') {
-        resultElement.textContent = `${lbsInput} pounds is equal to ${kgResult} kilograms.`;
+    var weightDirection = document.querySelector('input[name="weightDir"]:checked').id;
+    
+    if(weightDirection == "KgToLbs"){
+        if (typeof kgResult === 'number') {
+        resultElement.textContent = `${input} pounds is equal to ${kgResult} kilograms.`;
     } else {
         resultElement.textContent = 'Invalid input or conversion.';
     }
+    }
+    else{
+        if (typeof lbsResult === 'number') {
+            resultElement.textContent = `${input} kilograms is equal to ${lbsResult} pounds.`;
+        } else {
+            resultElement.textContent = 'Invalid input or conversion.';
+        }
+    }
+    
 
 };
+
+
 
 
 

@@ -33,15 +33,15 @@
     
     <!-- fill in IDs when needed-->
     <form>
-      <input type="radio" id="" name="distanceDir"checked>
-        <label>lbs to kg</label><br>
-        <input type="radio" id="" name="distanceDir">
+      <input type="radio" id="LbsToKg" name="weightDir"checked>
         <label>kg to lbs</label><br>
+        <input type="radio" id="KgToLbs" name="weightDir">
+        <label>lbs to kg</label><br>
 
       <div class="mb-4">
         <label>Enter Weight :</label>
-        <input type="number" id="lbsInput" min="0" step="any" class="border" placeholder="Enter weight">
-        <button type="button" onclick="convertLbsToKg()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <input type="number" id="Input" min="0" step="any" class="border" placeholder="Enter weight">
+        <button type="button" onclick="convertWeight()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
         <div id="result" class="ml-2">(result)</div>
       </div>
       

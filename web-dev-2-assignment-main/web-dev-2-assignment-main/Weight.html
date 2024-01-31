@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <!-- is this the right way to connect to tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+ 
+<body>
+
+  
+    <nav class="bg-blue-500 p-4">
+        <div class="mx-auto flex justify-between">
+          <a class="text-xl font-bold" href="homepage.html">Unit Converter</a>
+    
+          <div class="flex space-x-4">
+    
+            <!--needs links-->
+    
+            <a href="Weight.html" class="hover:underline">Weight</a>
+            <a href="Distance.html" class="hover:underline">Distance</a>
+            <a href="Temperature.html" class="hover:underline">Temperature</a>
+          </div>
+        </div>
+    </nav>
+
+  
+  <section class="mx-auto mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Weight Converter</h2>
+    
+    <!-- fill in IDs when needed-->
+    <form>
+      <input type="radio" id="LbsToKg" name="weightDir"checked>
+        <label>kg to lbs</label><br>
+        <input type="radio" id="KgToLbs" name="weightDir">
+        <label>lbs to kg</label><br>
+
+      <div class="mb-4">
+        <label>Enter Weight :</label>
+        <input type="number" id="Input" min="0" step="any" class="border" placeholder="Enter weight">
+        <button type="button" onclick="convertWeight()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <div id="result" class="ml-2">(result)</div>
+      </div>
+      
+      <!-- unsure how we will use javascript so i added this in but can be deleted if not neccesary-->
+      
+      <div>
+        <label>Enter Weights (comma-separated):</label>
+        <input type="text" id="" class="border" placeholder="e.g., 10, 20, 30">
+        <button type="button" onclick="" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <span id="" class="ml-2">(result)</span>
+      </div>
+
+    </form>
+  </section>
+
+  <script src="Unitconversion.js"></script>
+</body>
+
+</html>
+

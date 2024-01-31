@@ -33,17 +33,16 @@
     
     <!-- fill in IDs when needed-->
     <form>
+      <input type="radio" id="" name="distanceDir"checked>
+        <label>lbs to kg</label><br>
+        <input type="radio" id="" name="distanceDir">
+        <label>kg to lbs</label><br>
 
-        <input type="radio" id="" name="weightDir"checked>
-        <label>Kilograms to Pounds</label><br>
-        <input type="radio" id="" name="weightDir">
-        <label>Pounds to Kilograms</label><br>
-      
       <div class="mb-4">
         <label>Enter Weight :</label>
-        <input type="text" id="" class="border" placeholder="Enter weight">
-        <button type="button" onclick="" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
-        <span id="" class="ml-2">(result)</span>
+        <input type="number" id="lbsInput" min="0" step="any" class="border" placeholder="Enter weight">
+        <button type="button" onclick="convertLbsToKg()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <div id="result" class="ml-2">(result)</div>
       </div>
       
       <!-- unsure how we will use javascript so i added this in but can be deleted if not neccesary-->

@@ -39,36 +39,7 @@ const unitConverter = (startingUnit, endingUnit, value) => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const conversionSelect = document.getElementById("conversionSelect");
-    const weightForm = document.getElementById("weightForm");
-    const distanceForm = document.getElementById("distanceForm");
-    const temperatureForm = document.getElementById("temperatureForm");
-
-    conversionSelect.addEventListener("change", () => {
-        const selectedConversion = conversionSelect.value;
-
-        weightForm.style.display = "none";
-        distanceForm.style.display = "none";
-        temperatureForm.style.display = "none";
-
-        if (selectedConversion === "kgToLbs" || selectedConversion === "lbsToKg") {
-            weightForm.style.display = "block";
-        } else if (selectedConversion === "miToKm" || selectedConversion === "kmToMi") {
-            distanceForm.style.display = "block";
-        } else if (selectedConversion === "celsiusToFahrenheit" || selectedConversion === "fahrenheitToCelsius") {
-            temperatureForm.style.display = "block";
-
-        }
-
-    });
 
 
-
-    weightForm.addEventListener("submit", (event) => event.preventDefault());
-    distanceForm.addEventListener("submit", (event) => event.preventDefault());
-    temperatureForm.addEventListener("submit", (event) => event.preventDefault());
-
-});
 
 

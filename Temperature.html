@@ -34,25 +34,25 @@
     <!-- fill in IDs when needed-->
     <form>
 
-        <input type="radio" id="" name="temperatureDir"checked >
+        <input type="radio" id="celsiusToFahrenheit" name="temperatureDir"checked >
         <label>Celsius to Fahrenheit</label><br>
-        <input type="radio" id="" name="temperatureDir">
+        <input type="radio" id="fahrenheitToCelsius" name="temperatureDir">
         <label>Fahrenheit to Celsius</label><br>
       
       <div class="mb-4">
         <label>Enter temperature :</label>
-        <input type="text" id="" class="border" placeholder="Enter temperature">
-        <button type="button" onclick="" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
-        <span id="" class="ml-2">(result)</span>
+        <input type="text" id="Input" step="any" class="border" placeholder="Enter temperature">
+        <button type="button" onclick="convertTemperature()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <input id="result" class="ml-2">(result)</input>
       </div>
       
       <!-- unsure how we will use javascript so i added this in but can be deleted if not neccesary-->
       
       <div>
         <label>Enter temperatures (comma-separated):</label>
-        <input type="text" id="" class="border" placeholder="e.g., 10, 20, 30">
-        <button type="button" onclick="" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
-        <span id="" class="ml-2">(result)</span>
+        <input type="text" id="manyInput" class="border" placeholder="e.g., 10, 20, 30">
+        <button type="button" onclick="convertManyTemperature()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <div id="manyResult" class="ml-2">(result)</div>
       </div>
 
     </form>

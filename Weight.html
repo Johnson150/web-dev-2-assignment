@@ -40,18 +40,16 @@
 
       <div class="mb-4">
         <label>Enter Weight :</label>
-        <input type="number" id="Input" min="0" step="any" class="border" placeholder="Enter weight">
+        <input type="text" id="Input" min="0" step="any" class="border" placeholder="Enter weight">
         <button type="button" onclick="convertWeight()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
         <div id="result" class="ml-2">(result)</div>
       </div>
       
-      <!-- unsure how we will use javascript so i added this in but can be deleted if not neccesary-->
-      
       <div>
         <label>Enter Weights (comma-separated):</label>
-        <input type="text" id="" class="border" placeholder="e.g., 10, 20, 30">
-        <button type="button" onclick="" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
-        <span id="" class="ml-2">(result)</span>
+        <input type="text" id="manyInput" class="border" placeholder="e.g., 10, 20, 30">
+        <button type="button" onclick="convertManyWeight()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <div id="manyResult" class="ml-2">(result)</div>
       </div>
 
     </form>

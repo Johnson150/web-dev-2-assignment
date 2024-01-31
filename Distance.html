@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unit Converter</title>
-  <!-- is this the right way to connect to tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
  
@@ -18,7 +17,6 @@
 
       <div class="flex space-x-4">
 
-        <!--needs links-->
 
         <a href="Weight.html" class="hover:underline">Weight</a>
         <a href="Distance.html" class="hover:underline">Distance</a>
@@ -31,28 +29,26 @@
   <section class="mx-auto mt-8">
     <h2 class="text-2xl font-semibold mb-4">Distance Converter</h2>
     
-    <!-- fill in IDs when needed-->
     <form>
 
-        <input type="radio" id="" name="distanceDir"checked>
+        <input type="radio" id="miToKm" name="distanceDir"checked>
         <label>Miles to Kilometres</label><br>
-        <input type="radio" id="" name="distanceDir">
+        <input type="radio" id="kmToMi" name="distanceDir">
         <label>Kilometres to Miles</label><br>
       
       <div class="mb-4">
         <label>Enter Distance :</label>
-        <input type="text" id="" class="border" placeholder="Enter distance">
-        <button type="button" onclick="" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
-        <span id="" class="ml-2">(result)</span>
+        <input type="text" id="Input" step="any" class="border" placeholder="Enter distance">
+        <button type="button" onclick="convertDistance()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <div id="result" class="ml-2">(result)</div>
       </div>
       
-      <!-- unsure how we will use javascript so i added this in but can be deleted if not neccesary-->
       
       <div>
         <label>Enter distances (comma-separated):</label>
-        <input type="text" id="" class="border" placeholder="e.g., 10, 20, 30">
-        <button type="button" onclick="" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
-        <span id="" class="ml-2">(result)</span>
+        <input type="text" id="manyInput" class="border" placeholder="e.g., 10, 20, 30">
+        <button type="button" onclick="convertManyDistance()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+        <div id="manyResult" class="ml-2">(result)</div>
       </div>
 
     </form>

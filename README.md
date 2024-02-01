@@ -34,12 +34,12 @@ Contributions to this repository are welcome. If you find any issues or would li
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under N/A.
 
 ## Contact
 
-If you have any questions or concerns regarding this repository, feel free to contact the repository owner:
-- Name: [Johnson](https://github.com/Johnson150)
+If you have any questions or concerns regarding this repository, feel free to contact the repository owner and his groupmates:
+- Name: [Johnson](https://github.com/Johnson150), https://github.com/DanrelLu, https://github.com/NavkiratPuri, https://github.com/isaacm31.
 
 Thank you for your interest in the Web Development 2 Assignment repository!
 

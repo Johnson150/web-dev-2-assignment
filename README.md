@@ -34,7 +34,7 @@ Contributions to this repository are welcome. If you find any issues or would li
 
 ## License
 
-This project is licensed under N/A.
+This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 

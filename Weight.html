@@ -33,28 +33,32 @@
     </nav>
 
   <!-- Main Section -->
-  <main class="p-4 flex justify-center ">
-    <section class="mx-auto mt-8 justify-center bg-blue-100 p-2">
+  <main class="flex justify-center">
+    <section class="mx-auto mt-8 justify-center bg-blue-200 p-5 rounded-lg">
       <!-- Section Heading -->
-      <h2 class="text-2xl font-semibold mb-4">Weight Converter</h2>
+      
+      <h2 class="text-2xl font-semibold mb-4 text-center">Weight Converter</h2>
+      
 
       <!-- Weight Conversion Form -->
       <!-- fill in IDs when needed-->
-      <form>
+      <form class="flex flex-col items-center">
         <!-- Radio buttons for weight direction -->
         <input type="radio" id="LbsToKg" name="weightDir"checked>
-          <label>kg to lbs</label><br>
-          <input type="radio" id="KgToLbs" name="weightDir">
-          <label>lbs to kg</label><br>
+        <label class="mb-1">Kilograms to Pounds</label>
+        <input type="radio" id="KgToLbs" name="weightDir">
+        <label class="mb-4">Pounds to kilograms</label>
           
         <!-- Input field for weight -->
         <div class="mb-4">
           <label>Enter Weight :</label>
           <input type="text" id="Input" min="0" step="any" class="border" placeholder="Enter weight">
           <!-- Button to trigger weight conversion -->
-          <button type="button" onclick="convertWeight()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
+          <div class="flex justify-center mt-2" >
+            <button type="button" onclick="convertWeight()" class="bg-blue-500 px-4 py-2 ml-2 rounded-md hover:underline">Convert</button>
+          </div>
           <!-- Element to display conversion result -->
-          <div id="result" class="ml-2">(result)</div>
+          <div id="result" class="ml-2 text-center">(Result)</div>
         </div>
 
         <!-- Input field for multiple weights -->
@@ -62,9 +66,11 @@
           <label>Enter Weights (comma-separated):</label>
           <input type="text" id="manyInput" class="border" placeholder="e.g., 10, 20, 30">
           <!-- Button to trigger conversion of multiple weights -->
-          <button type="button" onclick="convertManyWeight()" class="bg-blue-500 px-4 py-2 ml-2 hover:underline">Convert</button>
-          <!-- Element to display results of multiple weight conversions -->
-          <div id="manyResult" class="ml-2">(result)</div>
+          <div class="flex justify-center mt-2" >
+            <button type="button" onclick="convertManyWeight()" class="bg-blue-500 px-4 py-2 ml-2 rounded-md hover:underline">Convert</button>
+          </div>
+            <!-- Element to display results of multiple weight conversions -->
+          <div id="manyResult" class="ml-2 text-center">(Result)</div>
         </div>
 
       </form>

@@ -18,7 +18,7 @@
     <nav class="bg-blue-500 p-4">
         <div class="mx-auto flex justify-between">
            <!-- Title Link -->
-          <a class="text-xl font-bold" href="homepage.html">Unit Converter</a>
+          <a class="text-xl font-bold" href="index.html">Unit Converter</a>
 
           <!-- Navigation Links -->
           <div class="flex space-x-4">
@@ -55,10 +55,10 @@
           <input type="text" id="Input" min="0" step="any" class="border" placeholder="Enter weight">
           <!-- Button to trigger weight conversion -->
           <div class="flex justify-center mt-2" >
-            <button type="button" onclick="convertWeight()" class="bg-blue-500 px-4 py-2 ml-2 rounded-md hover:underline">Convert</button>
+            <button type="button" onclick="convertWeight()" class="bg-blue-500 px-4 py-2 rounded-md hover:underline">Convert</button>
           </div>
           <!-- Element to display conversion result -->
-          <div id="result" class="ml-2 text-center">(Result)</div>
+          <div id="result" class="text-center">(Result)</div>
         </div>
 
         <!-- Input field for multiple weights -->
@@ -67,14 +67,15 @@
           <input type="text" id="manyInput" class="border" placeholder="e.g., 10, 20, 30">
           <!-- Button to trigger conversion of multiple weights -->
           <div class="flex justify-center mt-2" >
-            <button type="button" onclick="convertManyWeight()" class="bg-blue-500 px-4 py-2 ml-2 rounded-md hover:underline">Convert</button>
+            <button type="button" onclick="convertManyWeight()" class="bg-blue-500 px-4 py-2  rounded-md hover:underline">Convert</button>
           </div>
             <!-- Element to display results of multiple weight conversions -->
-          <div id="manyResult" class="ml-2 text-center">(Result)</div>
+          <div id="manyResult" class="text-center">(Result)</div>
         </div>
 
       </form>
     </section>
+  </main>
 
   <!-- Script to handle unit conversion -->
   <script src="Unitconversion.js"></script>
